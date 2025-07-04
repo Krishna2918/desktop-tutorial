@@ -1,0 +1,203 @@
+{
+  "platform": "PC",
+  "graphics_preset": "Ultra",
+  "duration": 10,
+  "frame_count": 620,
+  "performance_metrics": {
+    "frame_time": 0.016,
+    "fps": 60,
+    "gpu_usage": 60.0,
+    "memory_usage": 1536.0,
+    "quantum_coherence": 0.5855341877619656,
+    "emotional_intensity": 0.7683525802598206
+  },
+  "quantum_states": [
+    {
+      "coherence": 0.5872968576506448,
+      "superposition": 0.5,
+      "entanglement": 0.3,
+      "memory_size": 101
+    },
+    {
+      "coherence": 0.5837879062381408,
+      "superposition": 0.5,
+      "entanglement": 0.3,
+      "memory_size": 101
+    },
+    {
+      "coherence": 0.5840756788327288,
+      "superposition": 0.5,
+      "entanglement": 0.3,
+      "memory_size": 101
+    },
+    {
+      "coherence": 0.5816455945971917,
+      "superposition": 0.5,
+      "entanglement": 0.3,
+      "memory_size": 101
+    },
+    {
+      "coherence": 0.5772652313744628,
+      "superposition": 0.5,
+      "entanglement": 0.3,
+      "memory_size": 101
+    },
+    {
+      "coherence": 0.5745655123750033,
+      "superposition": 0.5,
+      "entanglement": 0.3,
+      "memory_size": 101
+    },
+    {
+      "coherence": 0.5828946321341636,
+      "superposition": 0.5,
+      "entanglement": 0.3,
+      "memory_size": 101
+    },
+    {
+      "coherence": 0.5841785711838905,
+      "superposition": 0.5,
+      "entanglement": 0.3,
+      "memory_size": 101
+    },
+    {
+      "coherence": 0.5762248635014905,
+      "superposition": 0.5,
+      "entanglement": 0.3,
+      "memory_size": 101
+    },
+    {
+      "coherence": 0.5855341877619656,
+      "superposition": 0.5,
+      "entanglement": 0.3,
+      "memory_size": 101
+    }
+  ],
+  "emotional_history": [
+    {
+      "excitement": 0.7995018017094274,
+      "frustration": 0.8978327191153987,
+      "focus": 0.9840114862009937,
+      "satisfaction": 0.5041243769924507,
+      "curiosity": 0.432922297407476,
+      "intensity": 0.7236785362851493
+    },
+    {
+      "excitement": 0.8166298292231688,
+      "frustration": 0.9116820917656243,
+      "focus": 0.9521409661226765,
+      "satisfaction": 0.5259167074627293,
+      "curiosity": 0.3861366835305722,
+      "intensity": 0.7185012556209542
+    },
+    {
+      "excitement": 0.8282219363697788,
+      "frustration": 0.8944747348702284,
+      "focus": 0.9576322295969227,
+      "satisfaction": 0.5373454326320406,
+      "curiosity": 0.41135115515092824,
+      "intensity": 0.7258050977239797
+    },
+    {
+      "excitement": 0.8593453210644928,
+      "frustration": 0.9441220488522698,
+      "focus": 0.9700266277974124,
+      "satisfaction": 0.49679036714614244,
+      "curiosity": 0.45062833655801565,
+      "intensity": 0.7441825402836666
+    },
+    {
+      "excitement": 0.8233210439733297,
+      "frustration": 0.9265310818666573,
+      "focus": 1.0,
+      "satisfaction": 0.5002520658177579,
+      "curiosity": 0.4601492308982706,
+      "intensity": 0.7420506845112032
+    },
+    {
+      "excitement": 0.8395849440460267,
+      "frustration": 0.9301852377512392,
+      "focus": 1.0,
+      "satisfaction": 0.45485496465007325,
+      "curiosity": 0.41932073446047957,
+      "intensity": 0.7287891761815637
+    },
+    {
+      "excitement": 0.8895802644134527,
+      "frustration": 0.9460472243006106,
+      "focus": 1.0,
+      "satisfaction": 0.4928680629415906,
+      "curiosity": 0.39350849152967027,
+      "intensity": 0.7444008086370648
+    },
+    {
+      "excitement": 0.8896077096954834,
+      "frustration": 0.9757542910943642,
+      "focus": 0.9664370754866883,
+      "satisfaction": 0.5313624899266917,
+      "curiosity": 0.41684215391213364,
+      "intensity": 0.7560007440230723
+    },
+    {
+      "excitement": 0.9173617094571056,
+      "frustration": 0.9878523117714448,
+      "focus": 0.9312247843242012,
+      "satisfaction": 0.5454456766226364,
+      "curiosity": 0.44218960673845076,
+      "intensity": 0.7648148177827678
+    },
+    {
+      "excitement": 0.9245303153387171,
+      "frustration": 1.0,
+      "focus": 0.9564302311611123,
+      "satisfaction": 0.4979658048555282,
+      "curiosity": 0.462836549943745,
+      "intensity": 0.7683525802598206
+    }
+  ],
+  "genetic_generations": [
+    {
+      "generation": 1,
+      "best_car": {
+        "speed_gene": 1.0729129068983352,
+        "acceleration_gene": 1.057637915378037,
+        "handling_gene": 0.9103577170352789,
+        "grip_gene": 0.94211066177256,
+        "wall_climbing_gene": 1.0123018595793312,
+        "efficiency_gene": 1.0058198156502198,
+        "adaptability_gene": 1.09459981580049,
+        "aesthetics_gene": 1.046247116887902
+      },
+      "fitness": 1.0177484761252693
+    },
+    {
+      "generation": 2,
+      "best_car": {
+        "speed_gene": 1.1149334202690468,
+        "acceleration_gene": 1.1251529040161563,
+        "handling_gene": 0.890785835829877,
+        "grip_gene": 1.0110079138182957,
+        "wall_climbing_gene": 0.9583216991502381,
+        "efficiency_gene": 1.0948365092175185,
+        "adaptability_gene": 1.038665990098094,
+        "aesthetics_gene": 1.1236976433443506
+      },
+      "fitness": 1.044675239467947
+    },
+    {
+      "generation": 3,
+      "best_car": {
+        "speed_gene": 1.072308983239184,
+        "acceleration_gene": 1.1569078632156007,
+        "handling_gene": 0.8873207751550778,
+        "grip_gene": 0.957709082176635,
+        "wall_climbing_gene": 0.8964199328962031,
+        "efficiency_gene": 1.059891478561861,
+        "adaptability_gene": 0.9828062641512119,
+        "aesthetics_gene": 1.1864914369059452
+      },
+      "fitness": 1.0249819770377149
+    }
+  ],
+  "timestamp": "2025-07-04T21:22:44.761080"
+}
