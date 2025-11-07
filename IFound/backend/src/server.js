@@ -12,8 +12,15 @@ const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 // Import routes
 const authRoutes = require('./routes/auth');
 const caseRoutes = require('./routes/cases');
+const submissionRoutes = require('./routes/submissions');
+const photoRoutes = require('./routes/photos');
+const paymentRoutes = require('./routes/payments');
+const adminRoutes = require('./routes/admin');
 
 const app = express();
+
+// Serve static files (uploaded photos)
+app.use('/uploads', express.static('uploads'));
 
 // Security middleware
 app.use(helmet());
@@ -54,6 +61,10 @@ app.get('/health', (req, res) => {
 const API_VERSION = process.env.API_VERSION || 'v1';
 app.use(`/api/${API_VERSION}/auth`, authRoutes);
 app.use(`/api/${API_VERSION}/cases`, caseRoutes);
+app.use(`/api/${API_VERSION}/submissions`, submissionRoutes);
+app.use(`/api/${API_VERSION}/photos`, photoRoutes);
+app.use(`/api/${API_VERSION}/payments`, paymentRoutes);
+app.use(`/api/${API_VERSION}/admin`, adminRoutes);
 
 // Root route
 app.get('/', (req, res) => {
