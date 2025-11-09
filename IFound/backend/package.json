@@ -11,7 +11,9 @@
     "migrate": "node src/utils/migrate.js",
     "seed": "node src/utils/seed.js",
     "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix"
+    "lint:fix": "eslint src/ --fix",
+    "postinstall": "node scripts/download-ai-models.js",
+    "setup-ai": "node scripts/download-ai-models.js"
   },
   "keywords": [
     "crowdsourcing",
@@ -46,7 +48,14 @@
     "uuid": "^9.0.1",
     "axios": "^1.6.2",
     "joi": "^17.11.0",
-    "date-fns": "^2.30.0"
+    "date-fns": "^2.30.0",
+    "@tensorflow/tfjs-node": "^4.15.0",
+    "@vladmandic/face-api": "^1.7.12",
+    "canvas": "^2.11.2",
+    "sharp": "^0.33.1",
+    "jimp": "^0.22.10",
+    "@tensorflow-models/coco-ssd": "^2.2.3",
+    "natural": "^6.10.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.2",

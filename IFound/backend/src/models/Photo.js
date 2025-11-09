@@ -77,6 +77,10 @@ const Photo = sequelize.define('Photo', {
       objects_detected: [],
     },
   },
+  image_features: {
+    type: DataTypes.ARRAY(DataTypes.FLOAT),
+    allowNull: true,
+  },
   // AWS Rekognition IDs
   aws_face_id: {
     type: DataTypes.STRING,

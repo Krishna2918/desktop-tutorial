@@ -16,6 +16,7 @@ const submissionRoutes = require('./routes/submissions');
 const photoRoutes = require('./routes/photos');
 const paymentRoutes = require('./routes/payments');
 const adminRoutes = require('./routes/admin');
+const aiRoutes = require('./routes/ai');
 
 const app = express();
 
@@ -65,6 +66,7 @@ app.use(`/api/${API_VERSION}/submissions`, submissionRoutes);
 app.use(`/api/${API_VERSION}/photos`, photoRoutes);
 app.use(`/api/${API_VERSION}/payments`, paymentRoutes);
 app.use(`/api/${API_VERSION}/admin`, adminRoutes);
+app.use(`/api/${API_VERSION}/ai`, aiRoutes);
 
 // Root route
 app.get('/', (req, res) => {
