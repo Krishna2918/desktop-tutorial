@@ -5,6 +5,7 @@ import { ThrottlerModule } from '@nestjs/throttler';
 import configuration from './config/configuration';
 import { LoggerService } from './common/services/logger.service';
 import { HealthModule } from './health/health.module';
+import { AuthModule } from './auth/auth.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { entities } from './database/entities';
@@ -50,6 +51,7 @@ import { entities } from './database/entities';
 
     // Feature modules
     HealthModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService, LoggerService],
