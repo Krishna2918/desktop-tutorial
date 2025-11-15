@@ -7,6 +7,7 @@ import { LoggerService } from './common/services/logger.service';
 import { HealthModule } from './health/health.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { entities } from './database/entities';
 
 @Module({
   imports: [
@@ -27,7 +28,7 @@ import { AppService } from './app.service';
         username: configService.get('database.username'),
         password: configService.get('database.password'),
         database: configService.get('database.database'),
-        entities: [],
+        entities: entities,
         synchronize: configService.get('nodeEnv') === 'development',
         logging: configService.get('nodeEnv') === 'development',
         ssl: configService.get('database.ssl'),
