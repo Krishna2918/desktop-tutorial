@@ -21,14 +21,13 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const checkAuth = async () => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      try {
-        const response = await authAPI.getMe();
-        setUser(response.data.user);
-      } catch (error) {
-        localStorage.removeItem('token');
-      }
+    // Auto-login demo user (no backend required)
+    try {
+      const response = await authAPI.getMe();
+      setUser(response.data.user);
+      localStorage.setItem('token', 'demo-token');
+    } catch (error) {
+      console.error('Auto-login failed:', error);
     }
     setLoading(false);
   };
