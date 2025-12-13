@@ -1,0 +1,468 @@
+{
+  "plans": {
+    "FREE": {
+      "name": "Free",
+      "description": "Perfect for trying out Unified AI Hub",
+      "price": {
+        "monthly": 0,
+        "yearly": 0
+      },
+      "limits": {
+        "messagesPerMonth": 50,
+        "tokensPerMonth": 100000,
+        "conversationsPerMonth": 10,
+        "documentsPerUser": 10,
+        "documentSizeMB": 5,
+        "totalStorageMB": 100,
+        "attachmentsPerMessage": 1,
+        "historyRetentionDays": 30,
+        "apiCallsPerDay": 100
+      },
+      "features": {
+        "aiProviders": ["openai", "anthropic", "google", "meta"],
+        "models": ["gpt-3.5-turbo", "claude-3-haiku-20240307", "gemini-pro", "llama-3-8b"],
+        "chat": true,
+        "basicSearch": true,
+        "export": ["json", "txt"],
+        "themes": ["light", "dark"],
+        "markdown": true,
+        "codeHighlighting": true,
+        "fileAttachments": true,
+        "imageUploads": false,
+        "multiModal": false,
+        "voiceInput": false,
+        "workflows": false,
+        "customPrompts": false,
+        "templates": false,
+        "collaboration": false,
+        "teamWorkspaces": false,
+        "analytics": false,
+        "apiAccess": false,
+        "prioritySupport": false,
+        "customBranding": false,
+        "sso": false,
+        "auditLogs": false,
+        "advancedSecurity": false,
+        "dataRetention": false,
+        "customIntegrations": false
+      },
+      "ui": {
+        "commandPalette": true,
+        "keyboardShortcuts": true,
+        "contextMenu": true,
+        "sidebar": true,
+        "rightPanel": false,
+        "focusMode": true,
+        "splitView": false,
+        "customLayouts": false,
+        "workspaceCustomization": false
+      }
+    },
+    "INDIVIDUAL_BASIC": {
+      "name": "Individual Basic",
+      "description": "For individual users who need more",
+      "price": {
+        "monthly": 9.99,
+        "yearly": 99.99
+      },
+      "limits": {
+        "messagesPerMonth": 500,
+        "tokensPerMonth": 2000000,
+        "conversationsPerMonth": 100,
+        "documentsPerUser": 100,
+        "documentSizeMB": 25,
+        "totalStorageMB": 1024,
+        "attachmentsPerMessage": 5,
+        "historyRetentionDays": 180,
+        "apiCallsPerDay": 1000
+      },
+      "features": {
+        "aiProviders": ["openai", "anthropic", "google", "meta"],
+        "models": ["gpt-4", "gpt-3.5-turbo", "claude-3-sonnet-20240229", "claude-3-haiku-20240307", "gemini-pro", "gemini-1.5-flash", "llama-3-70b"],
+        "chat": true,
+        "advancedSearch": true,
+        "export": ["json", "txt", "md", "pdf"],
+        "themes": ["light", "dark", "high-contrast"],
+        "markdown": true,
+        "codeHighlighting": true,
+        "fileAttachments": true,
+        "imageUploads": true,
+        "multiModal": true,
+        "voiceInput": true,
+        "workflows": false,
+        "customPrompts": true,
+        "templates": true,
+        "collaboration": false,
+        "teamWorkspaces": false,
+        "analytics": true,
+        "apiAccess": false,
+        "prioritySupport": false,
+        "customBranding": false,
+        "sso": false,
+        "auditLogs": false,
+        "advancedSecurity": false,
+        "dataRetention": false,
+        "customIntegrations": false
+      },
+      "ui": {
+        "commandPalette": true,
+        "keyboardShortcuts": true,
+        "contextMenu": true,
+        "sidebar": true,
+        "rightPanel": true,
+        "focusMode": true,
+        "splitView": true,
+        "customLayouts": false,
+        "workspaceCustomization": true
+      }
+    },
+    "INDIVIDUAL_PRO": {
+      "name": "Individual Pro",
+      "description": "Full power for advanced individual users",
+      "price": {
+        "monthly": 29.99,
+        "yearly": 299.99
+      },
+      "limits": {
+        "messagesPerMonth": -1,
+        "tokensPerMonth": 10000000,
+        "conversationsPerMonth": -1,
+        "documentsPerUser": 1000,
+        "documentSizeMB": 100,
+        "totalStorageMB": 10240,
+        "attachmentsPerMessage": 10,
+        "historyRetentionDays": 365,
+        "apiCallsPerDay": 10000
+      },
+      "features": {
+        "aiProviders": ["openai", "anthropic", "google", "meta"],
+        "models": ["gpt-4-turbo-preview", "gpt-4", "claude-3-opus-20240229", "claude-3-5-sonnet-20240620", "gemini-1.5-pro", "llama-3.1-70b"],
+        "chat": true,
+        "advancedSearch": true,
+        "export": ["json", "txt", "md", "pdf", "html", "docx"],
+        "themes": ["light", "dark", "high-contrast"],
+        "markdown": true,
+        "codeHighlighting": true,
+        "fileAttachments": true,
+        "imageUploads": true,
+        "multiModal": true,
+        "voiceInput": true,
+        "workflows": true,
+        "customPrompts": true,
+        "templates": true,
+        "collaboration": false,
+        "teamWorkspaces": false,
+        "analytics": true,
+        "apiAccess": true,
+        "prioritySupport": true,
+        "customBranding": false,
+        "sso": false,
+        "auditLogs": true,
+        "advancedSecurity": true,
+        "dataRetention": true,
+        "customIntegrations": true
+      },
+      "ui": {
+        "commandPalette": true,
+        "keyboardShortcuts": true,
+        "contextMenu": true,
+        "sidebar": true,
+        "rightPanel": true,
+        "focusMode": true,
+        "splitView": true,
+        "customLayouts": true,
+        "workspaceCustomization": true
+      }
+    },
+    "TEAM": {
+      "name": "Team",
+      "description": "Collaboration tools for teams",
+      "price": {
+        "monthly": 49.99,
+        "yearly": 499.99
+      },
+      "limits": {
+        "messagesPerMonth": -1,
+        "tokensPerMonth": 50000000,
+        "conversationsPerMonth": -1,
+        "documentsPerUser": 5000,
+        "documentSizeMB": 250,
+        "totalStorageMB": 51200,
+        "attachmentsPerMessage": 20,
+        "historyRetentionDays": 730,
+        "apiCallsPerDay": 50000,
+        "teamMembers": 10
+      },
+      "features": {
+        "aiProviders": ["openai", "anthropic", "google", "meta"],
+        "models": ["gpt-4-turbo-preview", "gpt-4-32k", "claude-3-opus-20240229", "claude-3-5-sonnet-20240620", "gemini-1.5-pro", "llama-3.1-70b"],
+        "chat": true,
+        "advancedSearch": true,
+        "export": ["json", "txt", "md", "pdf", "html", "docx"],
+        "themes": ["light", "dark", "high-contrast"],
+        "markdown": true,
+        "codeHighlighting": true,
+        "fileAttachments": true,
+        "imageUploads": true,
+        "multiModal": true,
+        "voiceInput": true,
+        "workflows": true,
+        "customPrompts": true,
+        "templates": true,
+        "collaboration": true,
+        "teamWorkspaces": true,
+        "sharedKnowledgeBase": true,
+        "analytics": true,
+        "teamAnalytics": true,
+        "apiAccess": true,
+        "prioritySupport": true,
+        "customBranding": false,
+        "sso": false,
+        "auditLogs": true,
+        "advancedSecurity": true,
+        "dataRetention": true,
+        "customIntegrations": true,
+        "rbac": true,
+        "activityTracking": true
+      },
+      "ui": {
+        "commandPalette": true,
+        "keyboardShortcuts": true,
+        "contextMenu": true,
+        "sidebar": true,
+        "rightPanel": true,
+        "focusMode": true,
+        "splitView": true,
+        "customLayouts": true,
+        "workspaceCustomization": true,
+        "teamDashboard": true
+      }
+    },
+    "ENTERPRISE": {
+      "name": "Enterprise",
+      "description": "Custom solutions for large organizations",
+      "price": {
+        "monthly": "custom",
+        "yearly": "custom"
+      },
+      "limits": {
+        "messagesPerMonth": -1,
+        "tokensPerMonth": -1,
+        "conversationsPerMonth": -1,
+        "documentsPerUser": -1,
+        "documentSizeMB": -1,
+        "totalStorageMB": -1,
+        "attachmentsPerMessage": -1,
+        "historyRetentionDays": -1,
+        "apiCallsPerDay": -1,
+        "teamMembers": -1
+      },
+      "features": {
+        "aiProviders": ["openai", "anthropic", "google", "meta"],
+        "models": "all",
+        "chat": true,
+        "advancedSearch": true,
+        "export": ["json", "txt", "md", "pdf", "html", "docx", "csv"],
+        "themes": ["light", "dark", "high-contrast"],
+        "markdown": true,
+        "codeHighlighting": true,
+        "fileAttachments": true,
+        "imageUploads": true,
+        "multiModal": true,
+        "voiceInput": true,
+        "workflows": true,
+        "customPrompts": true,
+        "templates": true,
+        "collaboration": true,
+        "teamWorkspaces": true,
+        "sharedKnowledgeBase": true,
+        "analytics": true,
+        "teamAnalytics": true,
+        "enterpriseAnalytics": true,
+        "apiAccess": true,
+        "prioritySupport": true,
+        "dedicatedSupport": true,
+        "customBranding": true,
+        "whiteLabel": true,
+        "sso": true,
+        "saml": true,
+        "auditLogs": true,
+        "advancedSecurity": true,
+        "dataRetention": true,
+        "customIntegrations": true,
+        "rbac": true,
+        "advancedRbac": true,
+        "activityTracking": true,
+        "complianceReports": true,
+        "onPremise": true,
+        "dedicatedInstance": true,
+        "sla": true,
+        "customTraining": true
+      },
+      "ui": {
+        "commandPalette": true,
+        "keyboardShortcuts": true,
+        "contextMenu": true,
+        "sidebar": true,
+        "rightPanel": true,
+        "focusMode": true,
+        "splitView": true,
+        "customLayouts": true,
+        "workspaceCustomization": true,
+        "teamDashboard": true,
+        "adminDashboard": true,
+        "customDashboards": true
+      }
+    }
+  },
+  "featureFlags": {
+    "experimental": {
+      "aiAgents": {
+        "enabled": false,
+        "description": "Autonomous AI agents for complex tasks",
+        "availableIn": ["INDIVIDUAL_PRO", "TEAM", "ENTERPRISE"]
+      },
+      "voiceConversations": {
+        "enabled": false,
+        "description": "Real-time voice conversations with AI",
+        "availableIn": ["INDIVIDUAL_PRO", "TEAM", "ENTERPRISE"]
+      },
+      "multiAgentOrchestration": {
+        "enabled": false,
+        "description": "Coordinate multiple AI agents",
+        "availableIn": ["ENTERPRISE"]
+      },
+      "customModelFinetuning": {
+        "enabled": false,
+        "description": "Fine-tune models with your data",
+        "availableIn": ["ENTERPRISE"]
+      }
+    },
+    "beta": {
+      "advancedWorkflows": {
+        "enabled": true,
+        "description": "Complex multi-step AI workflows",
+        "availableIn": ["INDIVIDUAL_PRO", "TEAM", "ENTERPRISE"]
+      },
+      "knowledgeGraphs": {
+        "enabled": true,
+        "description": "Visual knowledge representation",
+        "availableIn": ["TEAM", "ENTERPRISE"]
+      },
+      "realTimeCollaboration": {
+        "enabled": true,
+        "description": "Live collaboration on conversations",
+        "availableIn": ["TEAM", "ENTERPRISE"]
+      }
+    },
+    "stable": {
+      "chat": {
+        "enabled": true,
+        "description": "Basic chat functionality",
+        "availableIn": ["FREE", "INDIVIDUAL_BASIC", "INDIVIDUAL_PRO", "TEAM", "ENTERPRISE"]
+      },
+      "documents": {
+        "enabled": true,
+        "description": "Document upload and processing",
+        "availableIn": ["FREE", "INDIVIDUAL_BASIC", "INDIVIDUAL_PRO", "TEAM", "ENTERPRISE"]
+      },
+      "multiProvider": {
+        "enabled": true,
+        "description": "Multiple AI provider support",
+        "availableIn": ["FREE", "INDIVIDUAL_BASIC", "INDIVIDUAL_PRO", "TEAM", "ENTERPRISE"]
+      },
+      "analytics": {
+        "enabled": true,
+        "description": "Usage analytics and insights",
+        "availableIn": ["INDIVIDUAL_BASIC", "INDIVIDUAL_PRO", "TEAM", "ENTERPRISE"]
+      },
+      "workflows": {
+        "enabled": true,
+        "description": "Automated AI workflows",
+        "availableIn": ["INDIVIDUAL_PRO", "TEAM", "ENTERPRISE"]
+      }
+    }
+  },
+  "componentVisibility": {
+    "FREE": {
+      "upgradePrompts": true,
+      "advertisingBanner": false,
+      "usageLimitsIndicator": true,
+      "featureLockedBadges": true
+    },
+    "INDIVIDUAL_BASIC": {
+      "upgradePrompts": true,
+      "advertisingBanner": false,
+      "usageLimitsIndicator": true,
+      "featureLockedBadges": true
+    },
+    "INDIVIDUAL_PRO": {
+      "upgradePrompts": false,
+      "advertisingBanner": false,
+      "usageLimitsIndicator": false,
+      "featureLockedBadges": false
+    },
+    "TEAM": {
+      "upgradePrompts": false,
+      "advertisingBanner": false,
+      "usageLimitsIndicator": false,
+      "featureLockedBadges": false,
+      "teamManagement": true,
+      "billingOverview": true
+    },
+    "ENTERPRISE": {
+      "upgradePrompts": false,
+      "advertisingBanner": false,
+      "usageLimitsIndicator": false,
+      "featureLockedBadges": false,
+      "teamManagement": true,
+      "billingOverview": true,
+      "adminControls": true,
+      "complianceDashboard": true
+    }
+  },
+  "layoutCustomization": {
+    "FREE": {
+      "canChangeTheme": true,
+      "canChangeFontSize": false,
+      "canChangeLayout": false,
+      "canCustomizeSidebar": false,
+      "canCreateWorkspaces": false
+    },
+    "INDIVIDUAL_BASIC": {
+      "canChangeTheme": true,
+      "canChangeFontSize": true,
+      "canChangeLayout": true,
+      "canCustomizeSidebar": true,
+      "canCreateWorkspaces": false
+    },
+    "INDIVIDUAL_PRO": {
+      "canChangeTheme": true,
+      "canChangeFontSize": true,
+      "canChangeLayout": true,
+      "canCustomizeSidebar": true,
+      "canCreateWorkspaces": true,
+      "maxWorkspaces": 10
+    },
+    "TEAM": {
+      "canChangeTheme": true,
+      "canChangeFontSize": true,
+      "canChangeLayout": true,
+      "canCustomizeSidebar": true,
+      "canCreateWorkspaces": true,
+      "maxWorkspaces": 50,
+      "canShareWorkspaces": true
+    },
+    "ENTERPRISE": {
+      "canChangeTheme": true,
+      "canChangeFontSize": true,
+      "canChangeLayout": true,
+      "canCustomizeSidebar": true,
+      "canCreateWorkspaces": true,
+      "maxWorkspaces": -1,
+      "canShareWorkspaces": true,
+      "canCustomizeBranding": true,
+      "canSetOrgDefaults": true
+    }
+  }
+}

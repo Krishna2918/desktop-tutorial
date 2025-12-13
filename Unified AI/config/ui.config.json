@@ -1,0 +1,638 @@
+{
+  "layout": {
+    "sidebar": {
+      "defaultWidth": 280,
+      "minWidth": 200,
+      "maxWidth": 400,
+      "defaultCollapsed": false,
+      "collapsible": true,
+      "resizable": true,
+      "position": "left",
+      "showLabels": true
+    },
+    "rightPanel": {
+      "defaultWidth": 320,
+      "minWidth": 280,
+      "maxWidth": 600,
+      "defaultCollapsed": true,
+      "collapsible": true,
+      "resizable": true
+    },
+    "header": {
+      "height": 64,
+      "sticky": true,
+      "showSearch": true,
+      "showNotifications": true,
+      "showUserMenu": true
+    },
+    "footer": {
+      "height": 40,
+      "visible": true,
+      "showVersion": true,
+      "showStatus": true
+    },
+    "workspace": {
+      "defaultLayout": "default",
+      "layouts": {
+        "default": {
+          "name": "Default",
+          "description": "Standard layout with sidebar and main content",
+          "sidebar": true,
+          "rightPanel": false,
+          "header": true,
+          "footer": true
+        },
+        "focus": {
+          "name": "Focus Mode",
+          "description": "Distraction-free mode with minimal UI",
+          "sidebar": false,
+          "rightPanel": false,
+          "header": false,
+          "footer": false
+        },
+        "split": {
+          "name": "Split View",
+          "description": "Side-by-side content panels",
+          "sidebar": true,
+          "rightPanel": true,
+          "header": true,
+          "footer": true
+        },
+        "compact": {
+          "name": "Compact",
+          "description": "Minimalist layout for smaller screens",
+          "sidebar": false,
+          "rightPanel": false,
+          "header": true,
+          "footer": false
+        }
+      }
+    },
+    "contentArea": {
+      "maxWidth": 1440,
+      "centerContent": false,
+      "padding": 24
+    },
+    "grid": {
+      "columns": 12,
+      "gutter": 16,
+      "margin": 24
+    }
+  },
+  "components": {
+    "button": {
+      "sizes": {
+        "xs": {
+          "height": 24,
+          "paddingX": 8,
+          "paddingY": 4,
+          "fontSize": "xs",
+          "iconSize": 12
+        },
+        "sm": {
+          "height": 32,
+          "paddingX": 12,
+          "paddingY": 6,
+          "fontSize": "sm",
+          "iconSize": 14
+        },
+        "md": {
+          "height": 40,
+          "paddingX": 16,
+          "paddingY": 8,
+          "fontSize": "base",
+          "iconSize": 16
+        },
+        "lg": {
+          "height": 48,
+          "paddingX": 20,
+          "paddingY": 10,
+          "fontSize": "lg",
+          "iconSize": 20
+        },
+        "xl": {
+          "height": 56,
+          "paddingX": 24,
+          "paddingY": 12,
+          "fontSize": "xl",
+          "iconSize": 24
+        }
+      },
+      "variants": {
+        "primary": {
+          "background": "primary.500",
+          "color": "white",
+          "hoverBackground": "primary.600",
+          "activeBackground": "primary.700"
+        },
+        "secondary": {
+          "background": "secondary.100",
+          "color": "secondary.900",
+          "hoverBackground": "secondary.200",
+          "activeBackground": "secondary.300"
+        },
+        "ghost": {
+          "background": "transparent",
+          "color": "text.primary",
+          "hoverBackground": "background.secondary",
+          "activeBackground": "background.tertiary"
+        },
+        "danger": {
+          "background": "error.500",
+          "color": "white",
+          "hoverBackground": "error.600",
+          "activeBackground": "error.700"
+        }
+      },
+      "defaultSize": "md",
+      "defaultVariant": "primary"
+    },
+    "input": {
+      "sizes": {
+        "sm": {
+          "height": 32,
+          "paddingX": 12,
+          "fontSize": "sm"
+        },
+        "md": {
+          "height": 40,
+          "paddingX": 16,
+          "fontSize": "base"
+        },
+        "lg": {
+          "height": 48,
+          "paddingX": 20,
+          "fontSize": "lg"
+        }
+      },
+      "defaultSize": "md",
+      "borderRadius": "md",
+      "focusRingWidth": 2,
+      "focusRingColor": "border.focus"
+    },
+    "card": {
+      "padding": 20,
+      "borderRadius": "lg",
+      "shadow": "md",
+      "hoverShadow": "lg",
+      "borderWidth": 1,
+      "borderColor": "border.medium"
+    },
+    "modal": {
+      "sizes": {
+        "sm": {
+          "width": 400,
+          "maxWidth": "90vw"
+        },
+        "md": {
+          "width": 600,
+          "maxWidth": "90vw"
+        },
+        "lg": {
+          "width": 800,
+          "maxWidth": "90vw"
+        },
+        "xl": {
+          "width": 1000,
+          "maxWidth": "95vw"
+        },
+        "full": {
+          "width": "100vw",
+          "maxWidth": "100vw"
+        }
+      },
+      "defaultSize": "md",
+      "borderRadius": "xl",
+      "padding": 24,
+      "backdropBlur": true,
+      "closeOnEscape": true,
+      "closeOnBackdropClick": true
+    },
+    "toast": {
+      "position": "bottom-right",
+      "maxWidth": 400,
+      "duration": 5000,
+      "pauseOnHover": true,
+      "closeButton": true,
+      "borderRadius": "lg"
+    },
+    "dropdown": {
+      "maxHeight": 300,
+      "borderRadius": "md",
+      "shadow": "lg",
+      "itemHeight": 40,
+      "itemPadding": 12
+    },
+    "tooltip": {
+      "maxWidth": 300,
+      "padding": 8,
+      "borderRadius": "md",
+      "fontSize": "sm",
+      "delay": 300,
+      "offset": 8
+    },
+    "avatar": {
+      "sizes": {
+        "xs": 24,
+        "sm": 32,
+        "md": 40,
+        "lg": 48,
+        "xl": 64,
+        "2xl": 96
+      },
+      "defaultSize": "md",
+      "borderRadius": "full",
+      "borderWidth": 2
+    },
+    "badge": {
+      "sizes": {
+        "sm": {
+          "height": 20,
+          "paddingX": 6,
+          "fontSize": "xs"
+        },
+        "md": {
+          "height": 24,
+          "paddingX": 8,
+          "fontSize": "sm"
+        },
+        "lg": {
+          "height": 28,
+          "paddingX": 10,
+          "fontSize": "base"
+        }
+      },
+      "defaultSize": "md",
+      "borderRadius": "full"
+    }
+  },
+  "keyboardShortcuts": {
+    "global": {
+      "commandPalette": {
+        "key": "mod+k",
+        "description": "Open command palette"
+      },
+      "search": {
+        "key": "mod+/",
+        "description": "Focus search"
+      },
+      "newChat": {
+        "key": "mod+n",
+        "description": "Start new chat"
+      },
+      "settings": {
+        "key": "mod+,",
+        "description": "Open settings"
+      },
+      "toggleSidebar": {
+        "key": "mod+b",
+        "description": "Toggle sidebar"
+      },
+      "toggleTheme": {
+        "key": "mod+shift+t",
+        "description": "Toggle theme"
+      }
+    },
+    "chat": {
+      "send": {
+        "key": "mod+enter",
+        "description": "Send message"
+      },
+      "newLine": {
+        "key": "shift+enter",
+        "description": "Insert new line"
+      },
+      "clearInput": {
+        "key": "escape",
+        "description": "Clear input"
+      },
+      "focusInput": {
+        "key": "i",
+        "description": "Focus chat input"
+      },
+      "scrollToBottom": {
+        "key": "mod+down",
+        "description": "Scroll to bottom"
+      },
+      "scrollToTop": {
+        "key": "mod+up",
+        "description": "Scroll to top"
+      }
+    },
+    "navigation": {
+      "nextChat": {
+        "key": "mod+]",
+        "description": "Next chat"
+      },
+      "previousChat": {
+        "key": "mod+[",
+        "description": "Previous chat"
+      },
+      "goToHome": {
+        "key": "mod+h",
+        "description": "Go to home"
+      },
+      "goToHistory": {
+        "key": "mod+shift+h",
+        "description": "Go to history"
+      },
+      "goToSettings": {
+        "key": "mod+shift+s",
+        "description": "Go to settings"
+      }
+    },
+    "editing": {
+      "copy": {
+        "key": "mod+c",
+        "description": "Copy"
+      },
+      "paste": {
+        "key": "mod+v",
+        "description": "Paste"
+      },
+      "cut": {
+        "key": "mod+x",
+        "description": "Cut"
+      },
+      "undo": {
+        "key": "mod+z",
+        "description": "Undo"
+      },
+      "redo": {
+        "key": "mod+shift+z",
+        "description": "Redo"
+      },
+      "selectAll": {
+        "key": "mod+a",
+        "description": "Select all"
+      }
+    }
+  },
+  "commandPalette": {
+    "commands": [
+      {
+        "id": "new-chat",
+        "label": "New Chat",
+        "description": "Start a new conversation",
+        "category": "Chat",
+        "keywords": ["create", "start", "begin"],
+        "shortcut": "mod+n",
+        "action": "navigation.newChat"
+      },
+      {
+        "id": "search-chats",
+        "label": "Search Chats",
+        "description": "Search through your chat history",
+        "category": "Chat",
+        "keywords": ["find", "lookup", "history"],
+        "shortcut": "mod+/",
+        "action": "search.chats"
+      },
+      {
+        "id": "change-provider",
+        "label": "Change AI Provider",
+        "description": "Switch between AI providers",
+        "category": "AI",
+        "keywords": ["switch", "model", "openai", "anthropic", "google"],
+        "action": "ai.changeProvider"
+      },
+      {
+        "id": "change-model",
+        "label": "Change Model",
+        "description": "Select a different AI model",
+        "category": "AI",
+        "keywords": ["switch", "gpt", "claude", "gemini"],
+        "action": "ai.changeModel"
+      },
+      {
+        "id": "toggle-theme",
+        "label": "Toggle Theme",
+        "description": "Switch between light and dark theme",
+        "category": "Appearance",
+        "keywords": ["dark", "light", "mode"],
+        "shortcut": "mod+shift+t",
+        "action": "theme.toggle"
+      },
+      {
+        "id": "change-layout",
+        "label": "Change Layout",
+        "description": "Switch workspace layout",
+        "category": "Appearance",
+        "keywords": ["view", "focus", "split"],
+        "action": "layout.change"
+      },
+      {
+        "id": "export-chat",
+        "label": "Export Chat",
+        "description": "Export current conversation",
+        "category": "Chat",
+        "keywords": ["save", "download", "backup"],
+        "action": "chat.export"
+      },
+      {
+        "id": "delete-chat",
+        "label": "Delete Chat",
+        "description": "Delete current conversation",
+        "category": "Chat",
+        "keywords": ["remove", "clear"],
+        "action": "chat.delete"
+      },
+      {
+        "id": "settings",
+        "label": "Open Settings",
+        "description": "Configure application preferences",
+        "category": "Settings",
+        "keywords": ["preferences", "config", "options"],
+        "shortcut": "mod+,",
+        "action": "navigation.settings"
+      },
+      {
+        "id": "keyboard-shortcuts",
+        "label": "Keyboard Shortcuts",
+        "description": "View all keyboard shortcuts",
+        "category": "Help",
+        "keywords": ["keys", "hotkeys", "commands"],
+        "shortcut": "mod+?",
+        "action": "help.shortcuts"
+      },
+      {
+        "id": "documentation",
+        "label": "Open Documentation",
+        "description": "View help and documentation",
+        "category": "Help",
+        "keywords": ["help", "guide", "docs"],
+        "action": "help.documentation"
+      },
+      {
+        "id": "feedback",
+        "label": "Send Feedback",
+        "description": "Report a bug or request a feature",
+        "category": "Help",
+        "keywords": ["bug", "issue", "feature", "request"],
+        "action": "help.feedback"
+      }
+    ],
+    "maxResults": 10,
+    "fuzzySearch": true,
+    "recentCommandsLimit": 5
+  },
+  "workspace": {
+    "navigation": {
+      "items": [
+        {
+          "id": "home",
+          "label": "Home",
+          "icon": "home",
+          "path": "/",
+          "shortcut": "mod+h"
+        },
+        {
+          "id": "chats",
+          "label": "Chats",
+          "icon": "message-square",
+          "path": "/chats",
+          "badge": "unread"
+        },
+        {
+          "id": "history",
+          "label": "History",
+          "icon": "clock",
+          "path": "/history",
+          "shortcut": "mod+shift+h"
+        },
+        {
+          "id": "documents",
+          "label": "Documents",
+          "icon": "file-text",
+          "path": "/documents"
+        },
+        {
+          "id": "workflows",
+          "label": "Workflows",
+          "icon": "git-branch",
+          "path": "/workflows",
+          "planRequired": "INDIVIDUAL_PRO"
+        },
+        {
+          "id": "analytics",
+          "label": "Analytics",
+          "icon": "bar-chart",
+          "path": "/analytics",
+          "planRequired": "TEAM"
+        },
+        {
+          "id": "team",
+          "label": "Team",
+          "icon": "users",
+          "path": "/team",
+          "planRequired": "TEAM"
+        }
+      ],
+      "bottomItems": [
+        {
+          "id": "settings",
+          "label": "Settings",
+          "icon": "settings",
+          "path": "/settings",
+          "shortcut": "mod+,"
+        },
+        {
+          "id": "help",
+          "label": "Help",
+          "icon": "help-circle",
+          "path": "/help"
+        }
+      ]
+    },
+    "contextMenu": {
+      "chat": [
+        {
+          "id": "rename",
+          "label": "Rename",
+          "icon": "edit"
+        },
+        {
+          "id": "duplicate",
+          "label": "Duplicate",
+          "icon": "copy"
+        },
+        {
+          "id": "export",
+          "label": "Export",
+          "icon": "download"
+        },
+        {
+          "id": "share",
+          "label": "Share",
+          "icon": "share"
+        },
+        {
+          "id": "divider"
+        },
+        {
+          "id": "delete",
+          "label": "Delete",
+          "icon": "trash",
+          "danger": true
+        }
+      ],
+      "message": [
+        {
+          "id": "copy",
+          "label": "Copy",
+          "icon": "copy"
+        },
+        {
+          "id": "edit",
+          "label": "Edit",
+          "icon": "edit"
+        },
+        {
+          "id": "regenerate",
+          "label": "Regenerate",
+          "icon": "refresh-cw"
+        },
+        {
+          "id": "divider"
+        },
+        {
+          "id": "delete",
+          "label": "Delete",
+          "icon": "trash",
+          "danger": true
+        }
+      ]
+    }
+  },
+  "accessibility": {
+    "focusOutline": true,
+    "reduceMotion": false,
+    "highContrast": false,
+    "fontSize": 100,
+    "keyboardNavigation": true,
+    "screenReaderOptimized": true,
+    "announcements": true
+  },
+  "performance": {
+    "virtualScrolling": true,
+    "lazyLoading": true,
+    "debounceDelay": 300,
+    "throttleDelay": 100,
+    "maxVisibleMessages": 100,
+    "imageOptimization": true,
+    "codeHighlighting": true
+  },
+  "features": {
+    "markdown": true,
+    "codeBlocks": true,
+    "syntax Highlighting": true,
+    "fileAttachments": true,
+    "imageUploads": true,
+    "voiceInput": false,
+    "autoSave": true,
+    "autoSaveInterval": 30000,
+    "spellCheck": true,
+    "wordCount": true,
+    "characterCount": false
+  }
+}
