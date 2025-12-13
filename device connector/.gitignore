@@ -1,0 +1,206 @@
+# Universal Device Connector - Gitignore
+
+# ============================================
+# Node.js / JavaScript / TypeScript
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+.next/
+.nuxt/
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================================
+# Backend (NestJS)
+# ============================================
+backend/dist/
+backend/node_modules/
+backend/.env
+backend/coverage/
+backend/.nyc_output/
+
+# ============================================
+# iOS / macOS
+# ============================================
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/
+DerivedData/
+.build/
+Pods/
+Podfile.lock
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+.swiftpm/
+*.playground
+timeline.xctimeline
+playground.xcworkspace
+*.xccheckout
+
+# iOS artifacts
+ios/build/
+macos/build/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# ============================================
+# Android
+# ============================================
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+release/
+
+# Android Studio
+android/.gradle/
+android/build/
+android/local.properties
+android/.idea/
+android/app/build/
+android/app/release/
+android/app/debug/
+android/*.jks
+android/*.keystore
+android/app/google-services.json
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# ============================================
+# Windows (Electron)
+# ============================================
+windows/node_modules/
+windows/dist/
+windows/out/
+windows/build/
+windows/.webpack/
+windows/.cache/
+
+# Electron
+*.log
+
+# ============================================
+# Testing
+# ============================================
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+playwright-report/
+test-report/
+
+# ============================================
+# Secrets & Credentials
+# ============================================
+*.pem
+*.key
+*.p12
+*.mobileprovision
+credentials.json
+serviceAccountKey.json
+google-services.json
+GoogleService-Info.plist
+*.jks
+*.keystore
+vault-config.json
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================
+# OS
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================
+# Documentation builds
+# ============================================
+docs/.vitepress/dist
+docs/.vitepress/cache
+
+# ============================================
+# Temporary files
+# ============================================
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# ============================================
+# Docker
+# ============================================
+docker-compose.override.yml
+.docker/
+
+# ============================================
+# CI/CD artifacts
+# ============================================
+.github/workflows/artifacts/

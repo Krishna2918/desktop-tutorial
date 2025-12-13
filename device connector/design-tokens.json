@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "version": "1.0.0",
+  "description": "Universal Device Connector Design Tokens - Google-inspired liquid glass theme",
+  "colors": {
+    "primary": {
+      "black": "#000000",
+      "white": "#FFFFFF",
+      "description": "Base colors for sleek black theme"
+    },
+    "accent": {
+      "default": "#5E5CE6",
+      "purple": "#5E5CE6",
+      "blue": "#007AFF",
+      "teal": "#5AC8FA",
+      "green": "#34C759",
+      "yellow": "#FFCC00",
+      "orange": "#FF9500",
+      "red": "#FF3B30",
+      "pink": "#FF2D55",
+      "description": "Accent colors with Google Material Design inspiration"
+    },
+    "background": {
+      "dark": {
+        "primary": "#000000",
+        "secondary": "#1C1C1E",
+        "tertiary": "#2C2C2E",
+        "elevated": "#3A3A3C"
+      },
+      "light": {
+        "primary": "#FFFFFF",
+        "secondary": "#F2F2F7",
+        "tertiary": "#E5E5EA",
+        "elevated": "#FFFFFF"
+      },
+      "description": "Background colors for dark and light themes"
+    },
+    "surface": {
+      "dark": {
+        "glass": "rgba(28, 28, 30, 0.72)",
+        "glassHeavy": "rgba(28, 28, 30, 0.92)",
+        "glassThin": "rgba(28, 28, 30, 0.48)",
+        "overlay": "rgba(0, 0, 0, 0.5)"
+      },
+      "light": {
+        "glass": "rgba(242, 242, 247, 0.72)",
+        "glassHeavy": "rgba(242, 242, 247, 0.92)",
+        "glassThin": "rgba(242, 242, 247, 0.48)",
+        "overlay": "rgba(0, 0, 0, 0.3)"
+      },
+      "description": "Liquid glass surfaces with transparency and blur"
+    },
+    "text": {
+      "dark": {
+        "primary": "#FFFFFF",
+        "secondary": "rgba(255, 255, 255, 0.7)",
+        "tertiary": "rgba(255, 255, 255, 0.5)",
+        "disabled": "rgba(255, 255, 255, 0.3)"
+      },
+      "light": {
+        "primary": "#000000",
+        "secondary": "rgba(0, 0, 0, 0.7)",
+        "tertiary": "rgba(0, 0, 0, 0.5)",
+        "disabled": "rgba(0, 0, 0, 0.3)"
+      },
+      "description": "Text colors with proper contrast ratios"
+    },
+    "semantic": {
+      "success": {
+        "default": "#34C759",
+        "light": "#30D158",
+        "dark": "#30D158"
+      },
+      "warning": {
+        "default": "#FF9500",
+        "light": "#FF9F0A",
+        "dark": "#FF9F0A"
+      },
+      "error": {
+        "default": "#FF3B30",
+        "light": "#FF453A",
+        "dark": "#FF453A"
+      },
+      "info": {
+        "default": "#007AFF",
+        "light": "#0A84FF",
+        "dark": "#0A84FF"
+      },
+      "description": "Semantic colors for status and feedback"
+    },
+    "border": {
+      "dark": {
+        "subtle": "rgba(255, 255, 255, 0.1)",
+        "default": "rgba(255, 255, 255, 0.2)",
+        "strong": "rgba(255, 255, 255, 0.3)"
+      },
+      "light": {
+        "subtle": "rgba(0, 0, 0, 0.08)",
+        "default": "rgba(0, 0, 0, 0.12)",
+        "strong": "rgba(0, 0, 0, 0.2)"
+      },
+      "description": "Border colors with varying opacity"
+    }
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "xxl": 48,
+    "xxxl": 64,
+    "description": "Consistent spacing scale (in pixels)"
+  },
+  "borderRadius": {
+    "none": 0,
+    "sm": 4,
+    "md": 8,
+    "lg": 12,
+    "xl": 16,
+    "xxl": 24,
+    "full": 9999,
+    "description": "Border radius values for rounded corners"
+  },
+  "typography": {
+    "fontFamily": {
+      "system": {
+        "ios": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text'",
+        "android": "Roboto, 'Noto Sans', sans-serif",
+        "windows": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        "web": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+      },
+      "mono": {
+        "ios": "'SF Mono', Menlo, Courier, monospace",
+        "android": "'Roboto Mono', Courier, monospace",
+        "windows": "Consolas, 'Courier New', monospace",
+        "web": "'SF Mono', Consolas, Monaco, 'Andale Mono', 'Courier New', monospace"
+      },
+      "description": "Platform-specific system font families"
+    },
+    "fontSize": {
+      "xs": 12,
+      "sm": 14,
+      "base": 16,
+      "lg": 18,
+      "xl": 20,
+      "xxl": 24,
+      "xxxl": 32,
+      "display": 48,
+      "description": "Font size scale (in pixels)"
+    },
+    "fontWeight": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "heavy": 800,
+      "description": "Font weight values"
+    },
+    "lineHeight": {
+      "tight": 1.2,
+      "normal": 1.5,
+      "relaxed": 1.75,
+      "loose": 2,
+      "description": "Line height multipliers"
+    },
+    "letterSpacing": {
+      "tight": -0.5,
+      "normal": 0,
+      "wide": 0.5,
+      "wider": 1,
+      "description": "Letter spacing values (in pixels)"
+    }
+  },
+  "shadows": {
+    "none": "none",
+    "sm": {
+      "light": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "dark": "0 1px 2px 0 rgba(0, 0, 0, 0.5)"
+    },
+    "md": {
+      "light": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "dark": "0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -1px rgba(0, 0, 0, 0.4)"
+    },
+    "lg": {
+      "light": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      "dark": "0 10px 15px -3px rgba(0, 0, 0, 0.7), 0 4px 6px -2px rgba(0, 0, 0, 0.5)"
+    },
+    "xl": {
+      "light": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      "dark": "0 20px 25px -5px rgba(0, 0, 0, 0.8), 0 10px 10px -5px rgba(0, 0, 0, 0.6)"
+    },
+    "inner": {
+      "light": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+      "dark": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.5)"
+    },
+    "description": "Shadow presets for depth and elevation"
+  },
+  "blur": {
+    "none": 0,
+    "sm": 4,
+    "md": 8,
+    "lg": 16,
+    "xl": 24,
+    "xxl": 40,
+    "description": "Blur radius values for glass effect (in pixels)"
+  },
+  "opacity": {
+    "0": 0,
+    "10": 0.1,
+    "20": 0.2,
+    "30": 0.3,
+    "40": 0.4,
+    "50": 0.5,
+    "60": 0.6,
+    "70": 0.7,
+    "80": 0.8,
+    "90": 0.9,
+    "100": 1,
+    "description": "Opacity values for transparency"
+  },
+  "animation": {
+    "duration": {
+      "instant": 0,
+      "fast": 150,
+      "normal": 300,
+      "slow": 500,
+      "slower": 800,
+      "description": "Animation duration values (in milliseconds)"
+    },
+    "easing": {
+      "linear": "linear",
+      "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+      "easeOut": "cubic-bezier(0, 0, 0.2, 1)",
+      "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+      "description": "Animation easing functions"
+    }
+  },
+  "breakpoints": {
+    "mobile": 360,
+    "mobileLarge": 428,
+    "tablet": 768,
+    "tabletLarge": 1024,
+    "desktop": 1280,
+    "desktopLarge": 1920,
+    "description": "Responsive breakpoint values (in pixels)"
+  },
+  "zIndex": {
+    "base": 0,
+    "dropdown": 1000,
+    "sticky": 1100,
+    "fixed": 1200,
+    "modalBackdrop": 1300,
+    "modal": 1400,
+    "popover": 1500,
+    "tooltip": 1600,
+    "notification": 1700,
+    "description": "Z-index layering values"
+  }
+}
